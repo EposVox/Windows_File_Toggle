@@ -3,6 +3,11 @@
 ; Adam's Windows Mods #2 - Toggle file extensions & hidden files.
 ;These somewhat emulate how Ubuntu's file manager works for showing/hiding files and extensions.
 
+;No tray icon... obviously. No need for this to take up space.
+#NoTrayIcon
+SetTitleMatchMode RegEx
+return
+
 ;TOGGLES FILE EXTENSIONS (in Windows Explorer)
 ;toggle extensions script - checks status of file extension viewing, toggles it, refreshes Explorer window.
 f_ToggleFileExt()
